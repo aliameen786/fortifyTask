@@ -1,0 +1,14 @@
+//Table Creation And Insert Script
+create table TaskModels
+(
+id int primary key identity(1,1),
+TaskName nvarchar(50),
+TaskDate Datetime
+)
+
+select * from TaskModels
+insert into TaskModels(TaskName, TaskDate) values ('Task1', getdate())
+insert into TaskModels(TaskName, TaskDate) values ('Task2', getdate())
+insert into TaskModels(TaskName, TaskDate) values ('Task3', getdate())
+insert into TaskModels(TaskName, TaskDate) values ('Task4', getdate())
+insert into TaskModels(TaskName, TaskDate) values ('Task5', getdate())
